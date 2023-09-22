@@ -21,5 +21,13 @@ namespace Bakery.Tests
       int priceOfLoaves = Bread.LoafCalculator(numberOfLoaves);
       Assert.AreEqual(10, priceOfLoaves);
     }
+
+    [TestMethod]
+    public void LoafCalculator_CalculatesLoafCostWithDiscount_FinalCostOfLoaves()
+    {
+      int numberOfLoaves = 3;
+      int finalPrice = Bread.LoafCalculator(numberOfLoaves);
+      Assert.AreEqual(10, finalPrice);
+    }
   }
 }
