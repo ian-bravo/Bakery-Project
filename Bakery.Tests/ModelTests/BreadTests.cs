@@ -25,9 +25,9 @@ namespace Bakery.Tests
     [TestMethod]
     public void LoafCalculator_CalculatesLoafCostWithDiscount_FinalCostOfLoaves()
     {
-      int numberOfLoaves = 3;
+      int numberOfLoaves = 7;
       int finalPrice = Bread.LoafCalculator(numberOfLoaves);
-      Assert.AreEqual(10, finalPrice);
+      Assert.AreEqual(25, finalPrice);
     }
   }
 }

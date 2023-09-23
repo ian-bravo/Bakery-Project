@@ -7,10 +7,10 @@ namespace Bakery
   {
     static void Main()
     {
-      Bread testBread = new Bread();
-      Console.WriteLine(testBread);
-      Pastry testPastry = new Pastry();
-      Console.WriteLine(testPastry);
+      double data = (7/3);
+      Console.WriteLine($"cost of bread {Bread.LoafCalculator(3)}");
+      Console.WriteLine(Math.Round(data));
+      
     }
   }
 }
