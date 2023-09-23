@@ -13,5 +13,13 @@ namespace Bakery.Tests
       double result = Pastry.PastryCalculator(userInputForNumberOfPastries);
       Assert.AreEqual(6, result);
     }
+
+    [TestMethod]
+    public void PastryCalculator_CalculatesPastryCostWithDiscount_FinalCostOfPastries()
+    {
+      double numberOfPastries = 7;
+      double finalPricePastry = Pastry.PastryCalculator(numberOfPastries);
+      Assert.AreEqual(12, finalPricePastry);
+    }
   }
 }
