@@ -10,23 +10,23 @@ namespace Bakery.Tests
     public void LoafCalculator_CalculatesTheEnteredLoaves_NumberOfLoaves()
     {
       string userInputForNumberOfLoaves = "1";
-      int result = Bread.LoafCalculator(userInputForNumberOfLoaves);
+      double result = Bread.LoafCalculator(userInputForNumberOfLoaves);
       Assert.AreEqual(1, result);
     }
 
     [TestMethod]
     public void LoafCalculator_CalculatesLoafCostNoDiscount_CostOfLoaves()
     {
-      int numberOfLoaves = 2;
-      int priceOfLoaves = Bread.LoafCalculator(numberOfLoaves);
+      double numberOfLoaves = 2;
+      double priceOfLoaves = Bread.LoafCalculator(numberOfLoaves);
       Assert.AreEqual(10, priceOfLoaves);
     }
 
     [TestMethod]
     public void LoafCalculator_CalculatesLoafCostWithDiscount_FinalCostOfLoaves()
     {
-      int numberOfLoaves = 7;
-      int finalPrice = Bread.LoafCalculator(numberOfLoaves);
+      double numberOfLoaves = 7;
+      double finalPrice = Bread.LoafCalculator(numberOfLoaves);
       Assert.AreEqual(25, finalPrice);
     }
   }

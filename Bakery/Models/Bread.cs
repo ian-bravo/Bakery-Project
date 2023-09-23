@@ -5,15 +5,15 @@ namespace Bakery.Models
   public class Bread
   {
 
-    public static int LoafCalculator(string userEnteredNumberOfLoaves)
+    public static double LoafCalculator(string userEnteredNumberOfLoaves)
     {
-      int returnsStringAsInt = int.Parse(userEnteredNumberOfLoaves);
-      return returnsStringAsInt;
+      double returnsStringAsDouble = double.Parse(userEnteredNumberOfLoaves);
+      return returnsStringAsDouble;
     }
 
-    public static int LoafCalculator(int userEnterAsInt)
+    public static double LoafCalculator(double userEnterAsDouble)
     {
-      int priceOfLoaves = userEnterAsInt * 5;
+      double priceOfLoaves = userEnterAsDouble * 5;
       return priceOfLoaves;
     }
   }
