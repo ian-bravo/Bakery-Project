@@ -4,8 +4,6 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    // public double LoavesRequiredForFreebie = 3;
-    // public double PriceOfOneLoaf = 5;
     public static double LoavesRequiredForFreebie = 3;
     public static double PriceOfOneLoaf = 5;
 
