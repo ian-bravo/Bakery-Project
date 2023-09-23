@@ -17,12 +17,9 @@ namespace Bakery.Models
 
     public static double LoafCalculator(double userEnterAsDouble)
     {
-      double amountOfLoavesToBeCharged = userEnterAsDouble - Math.Round(userEnterAsDouble/LoavesRequiredForFreebie);
-      //5 = 7 - (7/3)
+      double amountOfLoavesToBeCharged = userEnterAsDouble - Math.Floor(userEnterAsDouble/LoavesRequiredForFreebie);
       double finalCostOfBread = amountOfLoavesToBeCharged * PriceOfOneLoaf;
       return finalCostOfBread;
-      // double priceOfLoaves = userEnterAsDouble * 5;
-      // return priceOfLoaves;
     }
   }
 }

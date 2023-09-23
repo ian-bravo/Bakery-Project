@@ -18,8 +18,8 @@ namespace Bakery.Tests
     public void LoafCalculator_CalculatesLoafCostNoDiscount_CostOfLoaves()
     {
       double numberOfLoaves = 2;
-      double priceOfLoaves = Bread.LoafCalculator(numberOfLoaves);
-      Assert.AreEqual(10, priceOfLoaves);
+      double numberOfLoavesEntered = Bread.LoafCalculator(numberOfLoaves);
+      Assert.AreEqual(10, numberOfLoavesEntered);
     }
 
     [TestMethod]
