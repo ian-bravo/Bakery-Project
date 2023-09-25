@@ -33,8 +33,17 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread ();
+      Bread newBread = new Bread ("4");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+
+    [TestMethod]
+    public void GetUserInputBread_ReturnUserInputBread_String()
+    {
+      string userInputBreadNumber = "4";
+      Bread newBread = new Bread(userInputBreadNumber);
+      string result = newBread.UserInputBreadNumber;
+      Assert.AreEqual(userInputBreadNumber, result);
     }
   }
 }

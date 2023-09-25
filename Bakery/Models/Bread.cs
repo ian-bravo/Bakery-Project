@@ -6,10 +6,11 @@ namespace Bakery.Models
   {
     public static double LoavesRequiredForFreebie = 3; 
     public static double PriceOfOneLoaf = 5;
+    public string UserInputBreadNumber { get; }
 
-    public Bread()
+    public Bread(string userInputBreadNumber)
     {
-      
+      UserInputBreadNumber = userInputBreadNumber;
     }
     public static double LoafCalculator(string userEnteredNumberOfLoaves)
     {
