@@ -10,7 +10,7 @@ namespace Bakery.Models
 
     public Pastry(string userInputPastryNumber)
     {
-      
+      UserInputPastryNumber = userInputPastryNumber;
     }
     public static double PastryCalculator(string userEnteredNumberOfPastries)
     {

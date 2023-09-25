@@ -28,5 +28,14 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry ("4");
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void GetUserInputPasty_ReturnUserInputPastry_String()
+    {
+      string userInputPastryNumber = "4";
+      Pastry newPastry = new Pastry(userInputPastryNumber);
+      string result = newPastry.UserInputPastryNumber;
+      Assert.AreEqual(userInputPastryNumber, result);
+    }
   }
 }
