@@ -6,6 +6,12 @@ namespace Bakery.Models
   {
     public static double PastriesRequiredForFreebie = 4;
     public static double PriceOfOnePastry = 2;
+    public string UserInputPastryNumber { get; }
+
+    public Pastry(string userInputPastryNumber)
+    {
+      UserInputPastryNumber = userInputPastryNumber;
+    }
     public static double PastryCalculator(string userEnteredNumberOfPastries)
     {
       double returnsStringAsDouble = double.Parse(userEnteredNumberOfPastries);

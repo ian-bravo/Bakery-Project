@@ -21,5 +21,12 @@ namespace Bakery.Tests
       double finalPricePastry = Pastry.PastryCalculator(numberOfPastries);
       Assert.AreEqual(12, finalPricePastry);
     }
+
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry ("4");
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
   }
 }
