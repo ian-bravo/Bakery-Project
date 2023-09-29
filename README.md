@@ -27,10 +27,16 @@ Cloning the Repo:
 1. Open Terminal.
 2. Change your directory to where you would want the cloned directory.
 3. Input the following command into your terminal:  
- `git clone https://github.com/ian-bravo/Bakery-Project.git`
+ `$ git clone https://github.com/ian-bravo/Bakery-Project.git`
 4. Using the terminal, navigate to the production directory: Bakery
 5. In the command line, run the command 'dotnet run' to compile and execute the console application.
 6. Interact through the text commands within the terminal.
+
+Testing
+1. Starting at the root directory, Bakery.Solution, navigate to Bakery.Tests using the following command within the terminal:   
+ `$ cd Bakery.Tests/`
+2. Once in the Bakery.Tests/ directory, enter the following command in the terminal to test the logic:  
+ `$ dotnet test`
 
 ## Known Bugs
 
